@@ -8,6 +8,9 @@
 #
 
 
+GIT_TAG=`git describe --abbrev=0 --tags`
+
+
 ## Initialization
 init: install_gems librarian_update
 
@@ -39,6 +42,9 @@ vagrant_destroy:
 build:
 	tar -X .tar_exclude -zcpf bistro.spl ../bistro
 
+build_remote:
+	curl -L -o bistro-$(GIT_TAG).spl https://github.com/ampledata/bistro/tarball/$(GIT_TAG)
+
 install_app:
 	vagrant ssh -c 'sudo /opt/splunk/bin/splunk install app /vagrant/bistro.spl -update true -auth admin:changeme'
 
@@ -60,4 +66,4 @@ sync:
 clean:
 	rm -rf *.egg* build dist *.pyc *.pyo cover doctest_pypi.cfg nosetests.xml \
 		pylint.log *.egg output.xml flake8.log output.xml */*.pyc .coverage core \
-		nohup.out bistro.spl cookbooks tmp
+		nohup.out bistro*.spl cookbooks tmp
