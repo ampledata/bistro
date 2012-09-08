@@ -40,7 +40,7 @@ vagrant_destroy:
 ## App
 
 build:
-	tar -X .tar_exclude -zcpf bistro.spl ../bistro
+	tar -X .tar_exclude -zcpf bistro-$(GIT_TAG).spl ../bistro
 
 build_remote:
 	curl -L -o bistro-$(GIT_TAG).spl https://github.com/ampledata/bistro/tarball/$(GIT_TAG)
