@@ -21,13 +21,11 @@ cookbook 'apt',
 cookbook 'chef_handler',
   :version => '1.0.6'
 
+cookbook 'splunk_handler',
+  :version => '1.0.1'
+
 path 'cookbooks'
 
 cookbook 'splunk',
   :git => 'https://github.com/ampledata/cookbook-splunk.git',
   :ref => 'develop'
-
-cookbook 'splunk_handler',
-  :git => 'https://github.com/ampledata/cookbook-splunk_handler.git',
-  :ref => 'develop'
-  #:ref => '1.0.0'

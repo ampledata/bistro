@@ -3,6 +3,8 @@ SITE
   specs:
     apt (1.4.8)
     chef_handler (1.0.6)
+    splunk_handler (1.0.1)
+      chef_handler (>= 0.0.0)
 
 GIT
   remote: https://github.com/ampledata/cookbook-splunk.git
@@ -10,14 +12,6 @@ GIT
   sha: a1fb00605873ab5717125efc169865f86e3c1480
   specs:
     splunk (0.0.3)
-
-GIT
-  remote: https://github.com/ampledata/cookbook-splunk_handler.git
-  ref: develop
-  sha: bd70acb9c81fc2032ab8fff094f8331fb326ee2e
-  specs:
-    splunk_handler (1.0.0)
-      chef_handler (>= 0.0.0)
 
 DEPENDENCIES
   apt (>= 0)
