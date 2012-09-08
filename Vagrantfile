@@ -1,4 +1,4 @@
-# Vagrantfile (vagrant) for the Splunk App for Chef: Bistro.
+# Vagrantfile (vagrant) for Bistro: The Splunk App for Chef.
 #
 # For use with the Bistro App test suite.
 #

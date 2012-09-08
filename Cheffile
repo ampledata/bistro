@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# Cheffile (librarian) for the Splunk App for Chef: Bistro.
+# Cheffile (librarian) for the Bistro: The Splunk App for Chef.
 #
 # For use with the Bistro App test suite.
 #

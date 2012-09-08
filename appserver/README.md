@@ -1,4 +1,4 @@
-Default Splunk App Configuration for Bistro: The Splunk App for Chef.
+Splunk App Appserver Overrides for Bistro: The Splunk App for Chef.
 
 
 ## Source

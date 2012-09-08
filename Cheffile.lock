@@ -3,7 +3,7 @@ SITE
   specs:
     apt (1.4.8)
     chef_handler (1.0.6)
-    splunk_handler (1.0.1)
+    splunk_handler (1.1.0)
       chef_handler (>= 0.0.0)
 
 GIT

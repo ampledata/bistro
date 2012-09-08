@@ -1,4 +1,4 @@
-Splunk App Permissions for the Splunk App for Chef: Bistro.
+Splunk App Permissions for Bistro: The Splunk App for Chef.
 
 
 ## Source
