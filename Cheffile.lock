@@ -1,0 +1,21 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.4.8)
+    chef_handler (1.0.6)
+    splunk_handler (1.0.1)
+      chef_handler (>= 0.0.0)
+
+GIT
+  remote: https://github.com/ampledata/cookbook-splunk.git
+  ref: develop
+  sha: a1fb00605873ab5717125efc169865f86e3c1480
+  specs:
+    splunk (0.0.3)
+
+DEPENDENCIES
+  apt (>= 0)
+  chef_handler (>= 0)
+  splunk (>= 0)
+  splunk_handler (>= 0)
+

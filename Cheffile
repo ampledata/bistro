@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+# Cheffile (librarian) for the Splunk App for Chef: Bistro.
+#
+# For use with the Bistro App test suite.
+#
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+#
+# Source:: https://github.com/ampledata/bistro
+# Author:: Greg Albrecht <mailto:gba@splunk.com>
+# Copyright:: Copyright 2012 Splunk, Inc.
+# License:: Apache License 2.0
+#
+
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'apt',
+  :version => '1.8.4'
+
+cookbook 'chef_handler',
+  :version => '1.0.6'
+
+cookbook 'splunk_handler',
+  :version => '1.0.1'
+
+path 'cookbooks'
+
+cookbook 'splunk',
+  :git => 'https://github.com/ampledata/cookbook-splunk.git',
+  :ref => 'develop'
