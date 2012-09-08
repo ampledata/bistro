@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+Resource Metrics Dashboard for the Splunk App for Chef: Bistro.
+
+Source:: https://github.com/ampledata/bistro
+Author:: Greg Albrecht <mailto:gba@splunk.com>
+Copyright:: Copyright 2012 Splunk, Inc.
+License:: Apache License 2.0
+-->
+
+
+<dashboard>
+  <label>Chef Resource Metrics</label>
+  <row>
+    <chart>
+      <searchName>Top Updated Resources</searchName>
+      <title>Top Updated Resources</title>
+      <option name="charting.axisLabelsY.majorUnit">1</option>
+      <option name="charting.axisTitleX.text">Resource</option>
+      <option name="charting.axisTitleY.text">Updates</option>
+      <option name="charting.axisY.minimumNumber">0</option>
+      <option name="charting.chart">bar</option>
+      <option name="charting.chart.nullValueMode">gaps</option>
+      <option name="charting.chart.stackMode">default</option>
+      <option name="charting.layout.splitSeries">false</option>
+      <option name="charting.legend.placement">bottom</option>
+      <option name="charting.primaryAxisTitle.text"/>
+      <option name="charting.secondaryAxis.minimumNumber"/>
+      <option name="charting.secondaryAxisTitle.text"/>
+    </chart>
+  </row>
+  <row>
+    <chart>
+      <searchName>Updated Resources Over Time</searchName>
+      <title>Updated Resources Over Time</title>
+      <option name="charting.axisTitleX.text">Time</option>
+      <option name="charting.axisTitleY.text">Updated Resources</option>
+      <option name="charting.chart">area</option>
+      <option name="charting.chart.nullValueMode">gaps</option>
+      <option name="charting.chart.stackMode">default</option>
+      <option name="charting.layout.splitSeries">false</option>
+      <option name="charting.legend.placement">none</option>
+      <option name="charting.primaryAxisTitle.text"/>
+      <option name="charting.secondaryAxisTitle.text"/>
+    </chart>
+  </row>
+  <row>
+    <chart>
+      <searchName>Updated Resources Over Time by Resource</searchName>
+      <title>Updated Resources Over Time by Resource</title>
+      <option name="charting.axisLabelsY.majorUnit">1</option>
+      <option name="charting.chart">line</option>
+      <option name="charting.chart.nullValueMode">gaps</option>
+      <option name="charting.chart.stackMode">default</option>
+      <option name="charting.layout.splitSeries">false</option>
+      <option name="charting.legend.placement">bottom</option>
+      <option name="charting.primaryAxisTitle.text">Time</option>
+      <option name="charting.secondaryAxis.minimumNumber">0</option>
+      <option name="charting.secondaryAxisTitle.text">Updates to Resource</option>
+    </chart>
+  </row>
+</dashboard>
