@@ -1,4 +1,4 @@
-# Gemfile for the Splunk App for Chef: Bistro.
+# Gemfile for Bistro: The Splunk App for Chef.
 #
 # For use with the Bistro App test suite.
 #

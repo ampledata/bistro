@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!--
-Run Metrics Dashboard for the Splunk App for Chef: Bistro.
+Run Metrics Dashboard for Bistro: The Splunk App for Chef.
 
 Source:: https://github.com/ampledata/bistro
 Author:: Greg Albrecht <mailto:gba@splunk.com>
